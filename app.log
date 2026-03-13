@@ -1,0 +1,152 @@
+2026-03-13 19:16:14,377 INFO: Application startup
+2026-03-13 19:16:14,689 INFO:  * Running on https://localhost:5555/ (Press CTRL+C to quit)
+2026-03-13 19:16:27,682 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:27] "GET / HTTP/1.1" 200 -
+2026-03-13 19:16:27,782 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:27] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:16:28,403 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:28] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:16:28,403 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:28] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:16:28,403 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:28] "GET /static/scripts/respond.js HTTP/1.1" 200 -
+2026-03-13 19:16:28,403 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:28] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:16:28,416 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:28] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:16:34,660 INFO: User admin logged out
+2026-03-13 19:16:34,700 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:34] "GET /logout HTTP/1.1" 302 -
+2026-03-13 19:16:44,917 ERROR: Exception on /logout [GET]
+Traceback (most recent call last):
+  File "C:\Users\anmol\Downloads\cd1756-Azure-Applications-project-main\cd1756-Azure-Applications-project-main\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\anmol\Downloads\cd1756-Azure-Applications-project-main\cd1756-Azure-Applications-project-main\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\anmol\Downloads\cd1756-Azure-Applications-project-main\cd1756-Azure-Applications-project-main\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\anmol\Downloads\cd1756-Azure-Applications-project-main\cd1756-Azure-Applications-project-main\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\anmol\Downloads\cd1756-Azure-Applications-project-main\cd1756-Azure-Applications-project-main\FlaskWebProject\views.py", line 115, in logout
+    app.logger.info(f"User {current_user.username} logged out")
+AttributeError: 'AnonymousUserMixin' object has no attribute 'username'
+2026-03-13 19:16:44,933 INFO: 127.0.0.1 - - [13/Mar/2026 19:16:44] "GET /logout HTTP/1.1" 500 -
+2026-03-13 19:16:55,934 INFO: Application startup
+2026-03-13 19:16:56,225 INFO:  * Running on https://localhost:5555/ (Press CTRL+C to quit)
+2026-03-13 19:17:06,774 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:06] "GET / HTTP/1.1" 302 -
+2026-03-13 19:17:07,417 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:07] "GET /login?next=%2F HTTP/1.1" 200 -
+2026-03-13 19:17:08,140 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:08] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:17:08,140 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:08] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:17:08,156 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:08] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:17:08,156 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:08] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:17:08,169 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:08] "GET /static/images/sign-in-with-ms.svg HTTP/1.1" 200 -
+2026-03-13 19:17:08,364 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:08] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:17:08,809 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:08] "GET /static/scripts/respond.js HTTP/1.1" 200 -
+2026-03-13 19:17:11,655 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:11] "GET /login HTTP/1.1" 200 -
+2026-03-13 19:17:12,377 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:12] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:17:12,377 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:12] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:17:12,395 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:12] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 304 -
+2026-03-13 19:17:12,406 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:12] "GET /static/images/sign-in-with-ms.svg HTTP/1.1" 304 -
+2026-03-13 19:17:12,417 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:12] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 304 -
+2026-03-13 19:17:12,634 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:12] "GET /static/scripts/bootstrap.js HTTP/1.1" 304 -
+2026-03-13 19:17:13,030 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:13] "GET /static/scripts/respond.js HTTP/1.1" 304 -
+2026-03-13 19:17:24,022 INFO: User admin logged in successfully
+2026-03-13 19:17:24,065 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:24] "POST /login HTTP/1.1" 302 -
+2026-03-13 19:17:24,888 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:24] "GET /home HTTP/1.1" 200 -
+2026-03-13 19:17:24,963 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:24] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:17:25,602 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:25] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 304 -
+2026-03-13 19:17:25,602 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:25] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:17:25,632 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:25] "GET /static/scripts/respond.js HTTP/1.1" 304 -
+2026-03-13 19:17:25,642 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:25] "GET /static/scripts/bootstrap.js HTTP/1.1" 304 -
+2026-03-13 19:17:25,651 INFO: 127.0.0.1 - - [13/Mar/2026 19:17:25] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 304 -
+2026-03-13 19:41:17,298 INFO: Application startup
+2026-03-13 19:41:17,638 INFO:  * Running on https://localhost:5555/ (Press CTRL+C to quit)
+2026-03-13 19:41:27,292 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:27] "GET / HTTP/1.1" 200 -
+2026-03-13 19:41:27,402 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:27] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:41:28,022 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:28] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:41:28,032 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:28] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:41:28,032 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:28] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:41:28,032 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:28] "GET /static/scripts/respond.js HTTP/1.1" 200 -
+2026-03-13 19:41:28,043 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:28] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:41:31,852 INFO: User admin logged out
+2026-03-13 19:41:31,882 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:31] "GET /logout HTTP/1.1" 302 -
+2026-03-13 19:41:32,492 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:32] "GET /login HTTP/1.1" 200 -
+2026-03-13 19:41:33,202 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:33] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 304 -
+2026-03-13 19:41:33,202 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:33] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 304 -
+2026-03-13 19:41:33,202 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:33] "GET /static/images/sign-in-with-ms.svg HTTP/1.1" 200 -
+2026-03-13 19:41:33,216 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:33] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:41:33,228 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:33] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:41:33,452 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:33] "GET /static/scripts/bootstrap.js HTTP/1.1" 304 -
+2026-03-13 19:41:33,817 INFO: 127.0.0.1 - - [13/Mar/2026 19:41:33] "GET /static/scripts/respond.js HTTP/1.1" 304 -
+2026-03-13 19:42:00,220 WARNING: Failed login attempt for username: admin
+2026-03-13 19:42:00,252 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:00] "POST /login HTTP/1.1" 302 -
+2026-03-13 19:42:01,152 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:01] "GET /login HTTP/1.1" 200 -
+2026-03-13 19:42:01,229 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:01] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:42:01,842 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:01] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 304 -
+2026-03-13 19:42:01,842 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:01] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:42:01,854 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:01] "GET /static/images/sign-in-with-ms.svg HTTP/1.1" 304 -
+2026-03-13 19:42:01,856 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:01] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 304 -
+2026-03-13 19:42:02,474 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:02] "GET /static/scripts/bootstrap.js HTTP/1.1" 304 -
+2026-03-13 19:42:02,478 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:02] "GET /static/scripts/respond.js HTTP/1.1" 304 -
+2026-03-13 19:42:30,262 INFO: User admin logged in successfully
+2026-03-13 19:42:30,300 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:30] "POST /login HTTP/1.1" 302 -
+2026-03-13 19:42:30,916 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:30] "GET /home HTTP/1.1" 200 -
+2026-03-13 19:42:30,998 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:30] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:42:31,622 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:31] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 304 -
+2026-03-13 19:42:31,622 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:31] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 304 -
+2026-03-13 19:42:31,642 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:31] "GET /static/scripts/respond.js HTTP/1.1" 304 -
+2026-03-13 19:42:31,642 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:31] "GET /static/scripts/bootstrap.js HTTP/1.1" 304 -
+2026-03-13 19:42:31,652 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:31] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:42:38,246 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:38] "GET /new_post HTTP/1.1" 200 -
+2026-03-13 19:42:38,352 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:38] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:42:38,972 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:38] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:42:38,972 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:38] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 304 -
+2026-03-13 19:42:38,984 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:38] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 304 -
+2026-03-13 19:42:38,999 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:38] "GET /static/scripts/respond.js HTTP/1.1" 304 -
+2026-03-13 19:42:39,005 INFO: 127.0.0.1 - - [13/Mar/2026 19:42:39] "GET /static/scripts/bootstrap.js HTTP/1.1" 304 -
+2026-03-13 19:45:29,182 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:29] "POST /new_post HTTP/1.1" 302 -
+2026-03-13 19:45:29,362 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:29] "GET /home HTTP/1.1" 200 -
+2026-03-13 19:45:30,142 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:30] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:45:30,152 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:30] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:45:30,157 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:30] "GET /static/scripts/respond.js HTTP/1.1" 304 -
+2026-03-13 19:45:30,158 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:30] "GET /static/scripts/bootstrap.js HTTP/1.1" 304 -
+2026-03-13 19:45:30,166 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:30] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 304 -
+2026-03-13 19:45:30,173 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:30] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 304 -
+2026-03-13 19:45:35,542 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:35] "GET /post/2 HTTP/1.1" 200 -
+2026-03-13 19:45:35,630 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:35] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:45:36,242 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:36] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:45:36,255 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:36] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:45:36,262 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:36] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:45:36,402 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:36] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:45:36,897 INFO: 127.0.0.1 - - [13/Mar/2026 19:45:36] "GET /static/scripts/respond.js HTTP/1.1" 200 -
+2026-03-13 19:48:36,782 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:36] "POST /post/2 HTTP/1.1" 302 -
+2026-03-13 19:48:37,042 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:37] "GET /home HTTP/1.1" 200 -
+2026-03-13 19:48:37,812 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:37] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:48:37,812 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:37] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:48:37,812 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:37] "GET /static/scripts/respond.js HTTP/1.1" 200 -
+2026-03-13 19:48:37,829 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:37] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:48:37,836 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:37] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:48:37,852 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:37] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:48:51,592 INFO: User admin logged out
+2026-03-13 19:48:51,622 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:51] "GET /logout HTTP/1.1" 302 -
+2026-03-13 19:48:52,012 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:52] "GET /login HTTP/1.1" 200 -
+2026-03-13 19:48:52,693 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:52] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:48:52,693 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:52] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:48:52,693 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:52] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:48:52,706 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:52] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:48:52,711 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:52] "GET /static/images/sign-in-with-ms.svg HTTP/1.1" 200 -
+2026-03-13 19:48:52,932 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:52] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:48:53,331 INFO: 127.0.0.1 - - [13/Mar/2026 19:48:53] "GET /static/scripts/respond.js HTTP/1.1" 200 -
+2026-03-13 19:49:09,292 INFO: User logged in using Microsoft authentication
+2026-03-13 19:49:09,318 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:09] "GET /getAToken?code=1.AUYASuhY-biSn0OmLU9FmWttB-zT5FhNu-hJq80hG2x9nXcAAFxGAA.BQABBAIAAAADAOz_BQD0_0V2b1N0c0FydGlmYWN0cwIAAAAAAPWj3prkAiWrM2UOkOgyCTN34U1on1eLOcrnuE3HWzK8-aFzJzLGh4YlL-mPQh53FmJnr5QFrd-1nyXRBIajBL2b_ky1_T1N1Ns_gfU3_ccspBjgLy1XT_xPlye2ida2dcCylrmG1Ilq9CYAvG_8gtqzv86c8D8pNSlQ2TWmR648QmFW4PVJ-OxGWCBKiyZMmGFcQW-BLOJekm0Tn2PAGLJXrfUh5PKe0zGqTInrVCKNaKzu3VB7kaI6lRBEwnpQdhohZSROHglABLWTXdbWeazwfHIbzDOH8bg9JWipLlf-HVPygt7ql3-1DNkc1AWqTPVY6CUEhHKPE8eVpSgo1ZkSd5XVN2FKNCzQW1a0p54joCcudoD7mFHoLytNwFfLVt1_lIgTIgnKCs4U-sKAG7jAFvYwQ_94iX6eTIFeOy71tH5VHRAbX5xxKX_4MOFUnxW492U3QBQLAirTy21Xgk3EbuQdQiaQTTN-ee0Ue-A6xPBeZg0osXwj2Xz-UyJ2Ly5_CRDmjbW3uf4lnpP6E-nUT5WVbv97jmwteSx4iOobV84e4nzDt0WZ7JBWWHFoWMwpZpTHpojjM0zlzAQUVP8OgXhZ5toVarougORi6RMYvhbtRuX0W87uzKZuuzsC4-8b16mF7OAS_MOlBHuBP0H9Wdj9Oe-ujwd-mdguJpNzQpHrtlpeTDat6VzYh2S57uXVsv80txggSYWjYFfLVhUd1325rVL8fPanXM-J5eAf0AfLpYS5JoEaj7ERqj-6kxSz3QFbufSeq7Djl7AW3TKjOf2lY-L98F4OwJnfRG_gAuRuDo3-pUnJDw-AHsdQuS_ee4DBmqz7AoEZN2tXKPqASfgmsrPrnXoXnjVE0tDl0MistP0USmgZSYOxKjPt1PwDVuLKItML30cpURQIs2zJkolm7xxCt80He6ICrVuwcrAnE3IJI5oInUa4KEZtje63c5KiTNApb0obDsx8Fh-jC1MTIWbZBEx5xHcWnMJq7iLXZcXwQPusmeGYbOIdL9VMvvPaeRKXlRcq4w-g8mBi5w7hHhFotMnyYj3vQ2zA1ThOZd9zd_XRI6t4VM7T43kxlpPjcVd6A_pYY82gelUQUk5BzNI5FUwcawSa9vNy3RlDe_RpcS9tk6SSiK2u8nRbx9Ecia8YAiCTH6gxWIKic25oyiA7UiPWX14c3VfeAYMSckFQAn68RlGk4DMHjCrQ5rT7EI0ZdODzVV-50gJ-_JbRnTWYykd60FI5rkRuUjioFtXZfW7YIlvS2J8C1AfrWGndH6mtLATCTCB3I2G_H0_bmqAH_YMMPqEt2-jELjXknB-ba962ZyV_t5ofruoj7HoC0gjfNOuvCXB1RIsA7a69Sd6ukWYVwSS0-oyaav31VAyPuKQ&state=5d2731a7-5226-4dce-8e61-17797ad802dd&session_state=002fca7a-507c-34b0-cb10-acc682995fed HTTP/1.1" 302 -
+2026-03-13 19:49:10,123 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:10] "GET /home HTTP/1.1" 200 -
+2026-03-13 19:49:10,266 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:10] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:49:10,887 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:10] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:49:10,892 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:10] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:49:10,892 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:10] "GET /static/scripts/respond.js HTTP/1.1" 200 -
+2026-03-13 19:49:10,901 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:10] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:49:10,915 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:10] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:49:24,153 INFO: User admin logged out
+2026-03-13 19:49:24,184 INFO: 127.0.0.1 - - [13/Mar/2026 19:49:24] "GET /logout HTTP/1.1" 302 -
+2026-03-13 19:50:06,068 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:06] "GET /getAToken?code=1.AUYASuhY-biSn0OmLU9FmWttB-zT5FhNu-hJq80hG2x9nXcAAFxGAA.BQABBAIAAAADAOz_BQD0_0V2b1N0c0FydGlmYWN0cwIAAAAAAGNwBJ__lrYC8SuWCnUr5eu-5oOwWjr_58zax0A38V853EExCiFy0utvk7gQX0b13iB7D-n1PWuJe7JxNd33GLpsuSILlEzXwqeWmYuNkx6oAIOxgZ9V48PytmYTIpwTV8bkv7nzixQTl9Fw7RgFFif6cO5EHBSv3GYjAncoh5axv6a9s0EP4Nzx5LVr_AJ1vfmTGWYPjiyZpURcRfAVNodDcefG15hGGEOrq_8go3Lsc9fGeJmxmw-czsBMHRSOR2XI34dgVG12WDtmsN0dmRnshRijl0h3D6ItFXmwe7kDUSm6oOPLJ013pV0Ib40yWS-WvvvdN3d7n55_HiIhDyhe1CO9i5FRQHRDPMsXyjt1kj7JucmRXEHoJgtaQQz7yBQ69_PG1uPjF08wyeB2t2qsLXIX0AlkOiSLP5fcAkWn7Mzv2EXvg8ZxOPv_gASQZfjEdTqBJBmhbI7KUBD6oBN9Z-Hli-na_OudC9Y3jl2FI6TeW-gbvgrk0LTRl3OwsppHoz63rq6ycdE8kVZKJEHPst6F9flsSY0rKu3-a6NUz7Ct1rgPQMADaEILZ6ZspRR9gJZ9EXmZlJ0Nq1GK1LsnBWry_Yw0aZbxnndurord-upwWI1v2iO3bgjoA81SqJZ-DLZgfEoaPx-4Qjhbwprwkd1Qnenqiyt5oSLnFYkZOqx-zARpNTPoOQzw5WP7iLfezSt0428QBk26gfeOXVt0VKiAez5DkHOly1wTu9-rv1G8XciLi5adUaF4Zc-tnvCIxl7vFNTHcGH2SEzTWfexYDY3-dUN_iE-PQC5z1_D-3px_8Y70M2Uw-Z_4CznzYRZWmMMvn1Ckx4qZr97zi5cuGjUMoN65OYuMmC7zij_RpZPVmvB6FMGo_zlaBPI4XB4UnJNCHDG0-eVcqpBcULaXvRH2Hf5sFY5SE2QUaJ8t3zezBlljreERIErRC_RHSN9tc8LMfmvWCFEd5PbXOkmLi9NCPR1cGey3ajxGBlG2qwcMaZCt-Cu5FQX627lmJ9sQmlOWgQIZOGRNot7Bg4HVkCDyOsYYBecO8ItFEyV4CKUQepF6Zj3Ez6ubS6PORJbRyaAEO566_SBNU-G5s2fmRHXw-g_5sv8BVH-Cn7NX23AI8wM6TMLxXPDpBUyri2leH0APpLI8JXCe9KQHln6X1mp-n8WeZ_c9q6rxy8Yu30HdAVni5mofc0_kpPV-1bamnTeI9WWN6Lk73bmPV26rVmK2J0JhnDlaa58iIh-Vei9PgjQW7ja2fA1aeLW0FYGdL4_oqXxs8199Jdw2Sie0mo8sBo1r5ZXncoiHaIVZgZoBhRHJJ4cdZrfE_DfKT3J4pLzUgZDX_7CRLdLiVPGhaG4fdbUtEkEZU9ZHRdU3w6m1FA&state=5d2731a7-5226-4dce-8e61-17797ad802dd&session_state=002fca7a-507c-34b0-cb10-acc682995fed HTTP/1.1" 302 -
+2026-03-13 19:50:06,700 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:06] "GET /home HTTP/1.1" 302 -
+2026-03-13 19:50:07,358 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:07] "GET /login?next=%2Fhome HTTP/1.1" 200 -
+2026-03-13 19:50:08,102 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:08] "GET /static/images/sign-in-with-ms.svg HTTP/1.1" 200 -
+2026-03-13 19:50:08,102 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:08] "GET /static/content/bootstrap.min.css HTTP/1.1" 200 -
+2026-03-13 19:50:08,117 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:08] "GET /static/content/site.css HTTP/1.1" 200 -
+2026-03-13 19:50:08,122 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:08] "GET /static/scripts/modernizr-2.6.2.js HTTP/1.1" 200 -
+2026-03-13 19:50:08,130 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:08] "GET /static/scripts/jquery-1.10.2.js HTTP/1.1" 200 -
+2026-03-13 19:50:08,352 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:08] "GET /static/scripts/bootstrap.js HTTP/1.1" 200 -
+2026-03-13 19:50:08,732 INFO: 127.0.0.1 - - [13/Mar/2026 19:50:08] "GET /static/scripts/respond.js HTTP/1.1" 200 -
